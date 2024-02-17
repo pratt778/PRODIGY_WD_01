@@ -4,10 +4,14 @@ let navcont = document.querySelector('.navbar-cont');
 let header = document.querySelector('.header-cont');
 let light = document.querySelector('.light-btn');
 let dark = document.querySelector('.dark-btn');
+let aboutin = document.querySelector('.about_inside');
 opennav = ()=>{
     container.classList.toggle('active');
     navcont.classList.toggle('active-bar')
 
+}
+openabout=()=>{
+    aboutin.classList.toggle('active_about');
 }
 
 window.onscroll = function(){

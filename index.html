@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title></title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+    <title>my website</title>
     
 </head>
 <body>
@@ -13,7 +17,7 @@
 
             <button aria-label="dark mode button" onclick="modechange()" class="btn btn_cont btn_dark">
                 <img src="https://t4.ftcdn.net/jpg/01/17/28/51/360_F_117285131_W2qjuUEEBPP2nPJHxosDk62mj4B6KvIg.jpg" alt="light mode button" height="30" class="active-btn mode-btn light-btn">
-                <img src="https://t4.ftcdn.net/jpg/02/68/99/75/360_F_268997550_GWOUiryygJGBKf2bs8cYROB4nFZxws73.jpg" alt="dark mode button" height="30" class="dark-btn mode-btn">
+                <img src="https://img.freepik.com/free-vector/sticker-template-with-moon-isolated_1308-58714.jpg?size=626&ext=jpg&ga=GA1.1.1700460183.1708128000&semt=ais" alt="dark mode button" height="30" class="dark-btn mode-btn">
             </button>
             
             <div class="mobile-wrapper">
@@ -34,9 +38,17 @@
                     <div class="sidebar">
                         <ul class="nav-list">
                             <li><a href="#home" class="nav-items active-nav">Home</a></li>
-                            <li><a href="#about" class="nav-items">About</a></li>
+                            <li><a href="#about" class="nav-items" onclick="openabout()"><i class="ri-arrow-down-s-fill"></i> About</a>
+                            
+                                <ul class="about_inside">
+                                    <li><a href="#">Company</a></li>
+                                    <li><a href="#">Employees</a></li>
+                                </ul>
+        
+                            </li>
                             <li><a href="#services" class="nav-items">Services</a></li>
-                            <li><a href="#contact" class="nav-items">Contact</a></li>
+                            <li><button class="btn btn_signin">Sign in</button></li>
+
                         </ul>
                     </div>
                 </div>
@@ -46,8 +58,14 @@
         <main>
             <section id="hero">
                 <div class="darker"></div>
-                <div class="home">
-
+                <div class="hero-container">
+                    <h1>Stunning Presentation Made <span class="col-ch">together</span></h1>
+                    <div>
+                        <form action="">
+                            <input type="text" placeholder="Search Here.........">
+                            <button><i class="ri-search-line"></i>  </button>
+                        </form>
+                    </div>
                 </div>
             </section>
         </main>
