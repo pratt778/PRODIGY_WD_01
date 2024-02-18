@@ -5,6 +5,10 @@ let header = document.querySelector('.header-cont');
 let light = document.querySelector('.light-btn');
 let dark = document.querySelector('.dark-btn');
 let aboutin = document.querySelector('.about_inside');
+let navitems = document.querySelectorAll('.nav-items');
+
+
+
 opennav = ()=>{
     container.classList.toggle('active');
     navcont.classList.toggle('active-bar')
@@ -13,6 +17,8 @@ opennav = ()=>{
 openabout=()=>{
     aboutin.classList.toggle('active_about');
 }
+
+
 
 window.onscroll = function(){
     if(document.body.scrollTop >=50 || document.documentElement.scrollTop >= 50){
