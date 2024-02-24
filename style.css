@@ -14,6 +14,8 @@
     --opaci:0.5;
     --btn-back:orange;
     --btn-col:white;
+    --foot-back:black;
+    --foot-text:white;
     
 }
 .dark-mode{
@@ -22,6 +24,8 @@
     --opaci:0.7;
     --btn-back:orangered;
     --btn-col:white;
+    --foot-back:darkcyan;
+    --foot-text:black;
     
 }
 li{
@@ -287,13 +291,125 @@ form{
     background:linear-gradient(to left,orange,orangered) ;
 }
 
+footer{
+    width: 100%;
+
+}
+.footer-section{
+    width: 100%;
+    
+    background-color: var(--foot-back);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-container{
+    width: 100%;
+    display: flex;
+    padding-inline: 1rem;
+    padding-block: 1.5rem;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 1rem;
+}
+.footer-top{
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-evenly; */
+    gap: 1.7rem;
+}
+.first{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 300px;
+}
+.cname{
+    color:var(--btn-back);
+    
+}
+
+.first p {
+    font: 20px;
+    text-align: left;
+    font-weight:700;
+    color: var(--foot-text);
+}
+.link-foot{
+    width: 100%;
+    display: flex;
+    gap: 0.8rem;
+}
+
+.link-foot li a{
+    font-size: 20px;
+    color: var(--foot-text);
+}
+
+.link-foot li{
+    background-color: #bbbbbb;
+    /* padding: 5px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.second{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.second h4{
+    font-size: 16px;
+    color: var(--foot-text);
+}
+
+.quick-links{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.footitems a{
+    font-weight: 600;
+    color: var(--foot-text);
+    padding-left: 3px;
+}
+
+.third{
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    color: var(--foot-text);
+}
+.third span,p{
+    font-weight: 500;
+}
+.copyright-foot{
+    font-size: 15px;
+    color: var(--foot-text);
+}
+
+
+
+
+
+
+
 @media only screen and (min-width:250px){
     .navbar-cont{
         width: 55%;
     }
 }
-@media only screen and (min-width:650px){
-
+@media only screen and (min-width:660px){
+    .footer-top{
+        justify-content: space-around;
+        padding-block: 2.4rem;
+    }
 }
 
 @media only screen and (min-width:570px){
