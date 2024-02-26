@@ -506,7 +506,7 @@ footer{
        
     }
     .about_inside li a{
-        /* color: black; */
+        color: black;
         font-weight: 600;
     }
     .active_about{
